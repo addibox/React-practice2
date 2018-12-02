@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <input type="text" onChange={this.changeInputHandler}></input>
         <ValidationComponent text={this.state.input}></ValidationComponent>
-        <p>{this.state.input}</p>
+        
       </div>
     );
   }
