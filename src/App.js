@@ -23,7 +23,7 @@ class App extends Component {
   
   render() {
     const charList = this.state.input.split('').map((ch, index) => {
-      return <CharComponent character = {ch} key={index} delete= {this.deleteCharHandeler}/>
+      return <CharComponent character = {ch} key={index} delete= {() => this.deleteCharHandeler(index)}/>
     });
     return (
       <div className="App">
